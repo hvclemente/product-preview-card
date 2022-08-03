@@ -17,20 +17,14 @@ html {
   padding: 0;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 body p {
   font-size: 14px;
 }
 
 main {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 300px);
   margin: auto;
-  width: 40%;
 }
 
 #perfume-desktop {
@@ -69,7 +63,10 @@ main {
 
 .conteudo #descricao p {
   font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
   line-height: 25px;
+  color: hsl(228, 12%, 48%);
 }
 
 #botao {
@@ -81,11 +78,11 @@ main {
 
 #botao img {
   position: absolute;
-  left: 35px;
-  top: calc(50% - 10px);
+  left: 55px;
+  top: calc(50% - 9px);
 }
 
-#botao a {
+#botao .link {
   display: inline-block;
   background-color: hsl(158, 36%, 37%);
   border-radius: 4px;
